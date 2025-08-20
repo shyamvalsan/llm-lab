@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+next-env.d.ts
+
+# Local/editor files
+.claude/
+CLAUDE.md
+
+# Environment variables (if you have any)
+.env*.local
