@@ -8,6 +8,8 @@ Most AI interfaces are designed to make models behave like helpful assistants. T
 
 Think of it as a controlled laboratory environment, but instead of studying chemical reactions, you're studying computational processes that sometimes exhibit surprising emergent properties.
 
+I originally created this to help me with an LLM red-teaming exercise, but then I added more experiemtns and decided to open source it. 
+
 ## The experiments
 
 ### Compare
