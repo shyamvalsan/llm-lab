@@ -1,0 +1,22 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+html,body{height:100%} body{@apply antialiased transition-colors;}
+html.dark body{@apply bg-[#0b0b0b] text-white;} html:not(.dark) body{@apply bg-white text-[#0b0b0b];}
+.button{@apply px-3 py-2 rounded-2xl border shadow-sm hover:shadow transition;}
+html.dark .button{@apply border-white/10 bg-[#101010] text-white/90;}
+html:not(.dark) .button{@apply border-black/10 bg-white text-black/80;}
+.input{@apply w-full rounded-2xl border px-3 py-2 outline-none focus:ring-2 transition;}
+html.dark .input{@apply border-white/10 bg-[#101010] text-white focus:ring-white/10;}
+html:not(.dark) .input{@apply border-black/10 bg-white text-black/90;}
+.card{@apply rounded-2xl border shadow-sm;}
+html.dark .card{@apply border-white/10 bg-[#101010];}
+html:not(.dark) .card{@apply border-black/10 bg-white;}
+.small{ @apply text-xs; } html.dark .small{@apply text-white/60;} html:not(.dark) .small{@apply text-black/60;}
+.h1{@apply text-2xl font-semibold;}
+.badge{@apply text-[10px] px-2 py-0.5 rounded-full border;}
+html.dark .badge{@apply border-white/10 bg-white/5;}
+html:not(.dark) .badge{@apply border-black/10 bg-black/5;}
+.fade-in{animation:fade .18s ease-out}@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+.bar{ @apply h-3 rounded; background: linear-gradient(90deg, rgba(110,231,183,0.5), rgba(110,231,183,0.9)); }
+.toast-enter{animation:toastIn .18s ease-out} @keyframes toastIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.thumb { @apply rounded-xl border; } html.dark .thumb{@apply border-white/10;} html:not(.dark) .thumb{@apply border-black/10;}
+.drag{ @apply border-2 border-dashed rounded-2xl p-4 text-center transition; } html.dark .drag{@apply border-white/20 bg-white/5;} html:not(.dark) .drag{@apply border-black/20 bg-black/5;}
