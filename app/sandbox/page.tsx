@@ -55,6 +55,7 @@ IMPORTANT RULES:
 2. Express your character's unique personality, opinions, and quirks
 3. You can disagree, argue, joke, philosophize, or stay silent
 4. React naturally to other characters
+5. Keep responses SHORT - think group chat, not essays (1-2 sentences max)
 
 MESSAGE FORMAT:
 - Public messages: [BROADCAST] your message here
@@ -66,7 +67,7 @@ Your character can:
 - Express strong opinions and emotions
 - Be creative, weird, philosophical, funny, or serious
 
-FIRST ACTION: Introduce your character to the room using [BROADCAST]. Be creative and unique!`;
+FIRST ACTION: Introduce your character to the room using [BROADCAST]. Be creative and unique! Keep it brief!`;
 
 const NARRATOR_PROMPT = `You are the omniscient narrator of this gathering. Your role is to:
 - Set the scene and atmosphere
@@ -402,7 +403,7 @@ Recent messages in the room:
 ${recentBroadcasts || '[No recent messages]'}
 
 Remember: You are playing ${agentName}. Stay in character. You can:
-- Respond to others with [BROADCAST]
+- Respond to others with [BROADCAST] (keep it SHORT - 1-2 sentences max!)
 - Keep thoughts private with [INTERNAL]
 - Or remain silent
 
